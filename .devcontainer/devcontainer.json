@@ -14,5 +14,10 @@
                 "Twilio.vscode-twilio"
             ]
         }
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "myport"
+        }
     }
 }
