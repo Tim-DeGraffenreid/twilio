@@ -2,4 +2,4 @@
 FROM mcr.microsoft.com/devcontainers/javascript-node:18-bullseye
 
 # Install Twilio CLI
-RUN curl -fsSL https://raw.githubusercontent.com/twilio/twilio-cli/main/install.sh | bash
+RUN apt install twilio-5.19.4-amd64.deb
