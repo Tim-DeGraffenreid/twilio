@@ -51,6 +51,7 @@ exports.handler = async function(context, event, callback) {
       gather.say(result.choices[0].message.content);
     } else { // Gather voice input if no text present
       //gather.say('Hello, this is Psalms. Give me a chapter and verse.');
+      console.log(__dirname + "/" + __filename);
       gather.say(process.env.GROQ_API + "LT");
     }
 
