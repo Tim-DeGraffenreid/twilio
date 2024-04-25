@@ -1,5 +1,5 @@
+require('dotenv').config();
 const Groq = require('groq-sdk');
-const os = require('os');
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
 
 exports.handler = async function(context, event, callback) {
@@ -51,7 +51,7 @@ exports.handler = async function(context, event, callback) {
       gather.say(result.choices[0].message.content);
     } else { // Gather voice input if no text present
       //gather.say('Hello, this is Psalms. Give me a chapter and verse.');
-      gather.say(process.env.GROQ_API);
+      gather.say(process.env.GROQ_API + "LT");
     }
 
     return callback(null, twiml);
