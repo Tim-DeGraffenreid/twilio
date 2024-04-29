@@ -1,0 +1,19 @@
+npm install -g twilio-run && twilio-cli && groq-sdk
+twilio serverless:start
+npm install dotenv
+than use twilio extention to start local server
+
+https://
+ CODESPACE_NAME: 'fluffy-yodel-xgr5qwjgx9736g6r'
+ -3000
+ .
+ GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN
+ /
+ __dirname + "/" + __filename
+ ;have to break __dirname down
+
+ or a combo of 
+   const path = require('path');
+    const parentDir = path.dirname(__dirname);
+    console.log(parentDir);
+    NAND CODESPACE_VSCODE_FOLDER: '/workspaces/twilio',
