@@ -2,9 +2,9 @@
     "commands": {},
     "environments": {},
     "projects": {},
-    "loadLocalEnv": true,  // Includes the local environment variables
-    "env": ".env",  // Optional: specify the path to your .env file if it's not in the root directory
-    "runtime": "node18"  // The version of Node.js to deploy the build to. (node18)
+    "loadLocalEnv": true,  
+    "env": ".env", 
+    "runtime": "node18"  
 	// "assets": true 	/* Upload assets. Can be turned off with --no-assets */,
 	// "assetsFolder": null 	/* Specific folder name to be used for static assets */,
 	// "buildSid": null 	/* An existing Build SID to deploy to the new environment */,
