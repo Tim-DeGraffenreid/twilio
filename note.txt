@@ -3,6 +3,8 @@ twilio serverless:start
 npm install dotenv
 than use twilio extention to start local server
 
+add  Plugin @twilio-labs/plugin-assets not installed for command "assets:list"
+
 https://
  CODESPACE_NAME: 'fluffy-yodel-xgr5qwjgx9736g6r'
  -3000
