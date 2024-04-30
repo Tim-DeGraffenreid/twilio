@@ -10,13 +10,9 @@
   "dependencies": {
     "@twilio/runtime-handler": "2.0.0",
     "dotenv": "^16.4.5",
-<<<<<<< HEAD
-    "twilio": "^3.84.1"
-=======
     "groq-sdk": "^0.3.2",
     "twilio": "^3.84.1",
     "twilio-cli": "^5.19.4"
->>>>>>> 82da606cb71010aed32dd8d56a6412644dfb1bd2
   },
   "devDependencies": {
     "twilio-run": "^4.0.0"
