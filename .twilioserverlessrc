@@ -3,7 +3,7 @@
     "environments": {},
     "projects": {},
     "loadLocalEnv": true,  
-    "env": ".env", 
+    "env": ".env.local", 
     "runtime": "node18"  
 	// "assets": true 	/* Upload assets. Can be turned off with --no-assets */,
 	// "assetsFolder": null 	/* Specific folder name to be used for static assets */,
