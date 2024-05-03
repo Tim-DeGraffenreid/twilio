@@ -4,7 +4,13 @@ const VoiceResponse = require('twilio').twiml.VoiceResponse;
 
 exports.handler = async function(context, event, callback) {
   const twiml = new VoiceResponse();
- 
+  const assets = Runtime.getAssets();
+  console.log(assets);
+  const bookAsset = assets['/json/psalms.json'] //must deploy before it is available
+  const bookPath = bookAsset.path;
+  console.log(bookPath);
+  const book = require(bookPath);
+
   try {
     
     const rolePrompt = "You are a database that only outputs verses from the first book of psalms in the " + 
@@ -51,8 +57,8 @@ exports.handler = async function(context, event, callback) {
       gather.say(result.choices[0].message.content);
     } else { // Gather voice input if no text present
       //gather.say('Hello, this is Psalms. Give me a chapter and verse.');
-      console.log(__dirname + "/" + __filename);
-      gather.say(process.env.GROQ_API + "LT");
+      console.log(book);
+      gather.say(book.psalms[0][0]);
     }
 
     return callback(null, twiml);
